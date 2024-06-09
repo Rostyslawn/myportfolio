@@ -26,6 +26,9 @@
         grid-gap: 50px;
 
         .item {
+            color: white;
+            text-decoration: none;
+
             &:hover {
                 text-decoration: underline;
             }
@@ -74,6 +77,46 @@
                 50% {
                     opacity: 0;
                 }
+            }
+        }
+    }
+}
+
+.projects {
+    padding: 100px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 54px;
+        font-weight: 500;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 650px);
+        grid-gap: 50px;
+
+        .image {
+            width: 650px;
+            height: 500px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .project {
+            h2 {
+                font-weight: 400;
+                margin: 25px 0;
+                font-size: 24px;
+            }
+
+            span {
+                font-family: Bradley Hand, cursive;
             }
         }
     }
