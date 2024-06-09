@@ -1,0 +1,80 @@
+* {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    font-family: Bradley Hand, cursive;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    height: 80px;
+    background: #2D2D2D;
+    color: white;
+
+    .name {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .items {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        grid-gap: 50px;
+
+        .item {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main {
+    color: white;
+    background: #1F2121;
+    padding: 150px 0;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+
+        h1 {
+            font-size: 54px;
+        }
+
+        .containerAboutMe {
+            position: relative;
+            display: inline-block;
+
+            .aboutMe {
+                font-family: Bradley Hand, cursive;
+                font-size: 24px;
+                display: inline-block;
+            }
+
+            .blinking-cursor {
+                position: absolute;
+                display: inline-block;
+                width: 1px;
+                height: 33px;
+                background-color: white;
+                animation: blink-animation 1s step-end infinite;
+            }
+
+            @keyframes blink-animation {
+                from, to {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
