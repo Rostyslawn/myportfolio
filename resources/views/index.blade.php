@@ -13,7 +13,7 @@
 <div class="main-info">
     <div class="nav">
         <div class="home"><a href="{{route("index")}}">Home</a></div>
-        <div class="projects"><a>Projects</a></div>
+        <div class="projects"><a href="#projects">Projects</a></div>
         <div class="reviews"><a>Reviews</a></div>
         <div class="getintouch"><a>Get In Touch</a></div>
     </div>
@@ -54,7 +54,7 @@
                 <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
             </div>
         </div>
-        <div class="project">
+        <div id="projects" class="project">
             <div class="photo">
                 <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
             </div>
