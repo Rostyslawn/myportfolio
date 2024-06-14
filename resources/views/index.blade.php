@@ -15,7 +15,7 @@
         <div class="home"><a href="{{route("index")}}">Home</a></div>
         <div class="projects"><a href="#projects">Projects</a></div>
         <div class="reviews"><a>Reviews</a></div>
-        <div class="getintouch"><a>Get In Touch</a></div>
+        <div class="get-in-touch"><a>Get In Touch</a></div>
     </div>
     <div class="main">
         <div class="left-side">
@@ -29,6 +29,14 @@
             <div class="photo">
                 <img src="{{asset('imgs/icon.png')}}" alt="my-photo">
             </div>
+        </div>
+    </div>
+    <div class="worked-with">
+        <h2>Worked with:</h2>
+        <div class="items">
+            <div class="item node-js">Node.js</div>
+            <div class="item laravel">Laravel</div>
+            <div class="item mysql">Mysql</div>
         </div>
     </div>
 </div>
