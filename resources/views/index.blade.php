@@ -32,6 +32,46 @@
         </div>
     </div>
 </div>
+<div class="my-projects">
+    <div class="header">
+        <h1>My Projects</h1>
+        <span>Full stack web developer</span>
+    </div>
+    <div class="projects">
+        <div class="project">
+            <div class="left-side">
+                <h2 class="project-name">Prom</h2>
+                <span class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+                <button class="link">
+                    <a>
+                        View
+                    </a>
+                </button>
+            </div>
+            <div class="photo">
+                <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
+            </div>
+        </div>
+        <div class="project">
+            <div class="photo">
+                <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
+            </div>
+            <div class="left-side">
+                <h2 class="project-name">Sanatate</h2>
+                <span class="info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+                </span>
+                <button class="link">
+                    <a>
+                        View
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="{{asset('js/index.js')}}"></script>
 </body>
 </html>

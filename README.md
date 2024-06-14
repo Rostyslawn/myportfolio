@@ -13,7 +13,7 @@ To run the project, follow these steps:
 npm i
 ```
 
-2. Update composer and create, seed database:
+2. Update composer:
 ```bash
 npm run start-project 
 ```
