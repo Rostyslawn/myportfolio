@@ -1,122 +1,82 @@
 * {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding: 0;
     margin: 0;
 }
 
-.nav {
-    font-family: Bradley Hand, cursive;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    align-items: center;
-    height: 80px;
-    background: #2D2D2D;
-    color: white;
+.main-info {
+    $color-for-text: #9C9C9C;
+    background: #080808;
+    padding: 0 250px;
+    padding-bottom: 50px;
+    //height: 60vh;
 
-    .name {
-        font-size: 18px;
-        font-weight: 400;
-    }
+    .nav {
+        * {
+            color: $color-for-text;
+        }
 
-    .items {
-        cursor: pointer;
+        background: #1B1B1B;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         display: flex;
-        flex-direction: row;
-        grid-gap: 50px;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
 
-        .item {
-            color: white;
+        a {
+            cursor: pointer;
             text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
-}
 
-.main {
-    color: white;
-    background: #1F2121;
-    padding: 150px 0;
-    text-align: center;
-
-    .container {
+    .main {
         display: flex;
-        flex-direction: column;
-        grid-gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 150px;
+        padding: 0 100px;
 
-        h1 {
-            font-size: 54px;
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 20px;
+
+            h1 {
+                font-size: 44px;
+                color: #FFFFFF;
+            }
+
+            .about-me {
+                font-size: 14px;
+                max-width: 450px;
+                color: $color-for-text;
+            }
+
+            .start {
+                cursor: pointer;
+                width: 310px;
+                height: 65px;
+                border: none;
+                border-radius: 10px;
+                background: #3F8E00;
+                box-shadow: 0 0 8px #62BA1B;
+                color: #FFFFFF;
+            }
         }
 
-        .containerAboutMe {
-            position: relative;
-            display: inline-block;
+        .right-side {
+            .photo {
+                width: 350px;
+                height: 350px;
 
-            .aboutMe {
-                font-family: Bradley Hand, cursive;
-                font-size: 24px;
-                display: inline-block;
-            }
-
-            .blinking-cursor {
-                position: absolute;
-                display: inline-block;
-                width: 1px;
-                height: 33px;
-                background-color: white;
-                animation: blink-animation 1s step-end infinite;
-            }
-
-            @keyframes blink-animation {
-                from, to {
-                    opacity: 1;
+                img {
+                    object-fit: cover;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
                 }
-                50% {
-                    opacity: 0;
-                }
-            }
-        }
-    }
-}
-
-.projects {
-    padding: 100px 0;
-    text-align: center;
-
-    h1 {
-        font-size: 54px;
-        font-weight: 500;
-    }
-
-    .container {
-        margin-top: 100px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 650px);
-        grid-gap: 50px;
-
-        .image {
-            width: 650px;
-            height: 500px;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .project {
-            h2 {
-                font-weight: 400;
-                margin: 25px 0;
-                font-size: 24px;
-            }
-
-            span {
-                font-family: Bradley Hand, cursive;
             }
         }
     }
