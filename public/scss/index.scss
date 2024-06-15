@@ -111,9 +111,10 @@ button {
 
 .my-projects {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    padding: 0 350px;
     grid-gap: 50px;
-    padding: 0 200px;
     margin-top: 50px;
 
     .header {
@@ -133,57 +134,117 @@ button {
     }
 
     .projects {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 445px);
         grid-gap: 50px;
 
         .project {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
             grid-gap: 25px;
 
-            .left-side {
-                display: flex;
-                flex-direction: column;
-                grid-gap: 25px;
-
-                .project-name {
-                    font-size: 24px;
-                }
-
-                .info {
-                    display: block;
-                    width: 420px;
-                    max-width: 420px;
-                    font-size: 14px;
-                    color: $color-for-text;
-                }
-
-                .link {
-                    background: #FF9115;
-                    border: none;
-                    border-radius: 5px;
-                    width: 250px;
-                    height: 40px;
-
-                    a {
-                        color: #FFFFFF;
-                        text-decoration: none;
-                    }
-                }
-            }
-
             .photo {
-                width: 500px;
-                height: 335px;
+                width: 445px;
+                height: 300px;
 
                 img {
-                    border-radius: 5px;
+                    border-radius: 10px;
                     width: 100%;
                     height: 100%;
                 }
             }
+
+            .project-name {
+                font-size: 24px;
+            }
+
+            .info {
+                display: block;
+                width: 420px;
+                max-width: 420px;
+                font-size: 14px;
+                color: $color-for-text;
+            }
+
+            .link {
+                width: 140px;
+                height: 40px;
+                background: #3F8E00;
+                box-shadow: 0 0 8px #62BA1B;
+                border: none;
+                border-radius: 5px;
+
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.get-in-touch {
+    background: #080808;
+    margin-top: 50px;
+    padding: 100px 0;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            font-size: 44px;
+            color: #FFFFFF;
+        }
+
+        span {
+            font-size: 14px;
+            color: $color-for-text;
+            width: 570px;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input {
+            width: 350px;
+            padding: 15px 0;
+
+            label {
+                span {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                }
+
+                input {
+                    font-size: 12px;
+                    border: none;
+                    border-radius: 5px;
+                    color: $color-for-text;
+                    width: 350px;
+                    height: 40px;
+
+                    &::placeholder {
+                        text-indent: 5px;
+                    }
+                }
+            }
+        }
+
+        .submit {
+            width: 350px;
+            height: 50px;
+            background: #3F8E00;
+            box-shadow: 0 0 8px #62BA1B;
+            border: none;
+            border-radius: 5px;
+            color: #FFFFFF;
         }
     }
 }

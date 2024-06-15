@@ -15,7 +15,7 @@
         <div class="home"><a href="{{route("index")}}">Home</a></div>
         <div class="projects"><a href="#projects">Projects</a></div>
         <div class="reviews"><a>Reviews</a></div>
-        <div class="get-in-touch"><a>Get In Touch</a></div>
+        <div class="get-in-touch-link"><a href="#get-in-touch">Get In Touch</a></div>
     </div>
     <div class="main">
         <div class="left-side">
@@ -46,38 +46,57 @@
         <span>Full stack web developer</span>
     </div>
     <div class="projects">
-        <div class="project">
-            <div class="left-side">
-                <h2 class="project-name">Prom</h2>
-                <span class="info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </span>
-                <button class="link">
-                    <a>
-                        View
-                    </a>
-                </button>
-            </div>
-            <div class="photo">
-                <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
-            </div>
-        </div>
         <div id="projects" class="project">
             <div class="photo">
                 <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
             </div>
-            <div class="left-side">
-                <h2 class="project-name">Sanatate</h2>
-                <span class="info">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </span>
-                <button class="link">
-                    <a>
-                        View
-                    </a>
-                </button>
-            </div>
+            <h2 class="project-name">Prom</h2>
+            <span class="info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </span>
+            <button class="link">
+                <a>
+                    View
+                </a>
+            </button>
         </div>
+        <div class="project">
+            <div class="photo">
+                <img src="{{asset('imgs/myphoto.jpg')}}" alt="project-photo">
+            </div>
+            <h2 class="project-name">Sanatate</h2>
+            <span class="info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
+            </span>
+            <button class="link">
+                <a>
+                    View
+                </a>
+            </button>
+        </div>
+    </div>
+</div>
+<div id="get-in-touch" class="get-in-touch">
+    <div class="header">
+        <h1>Get in touch</h1>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+    </div>
+    <div class="inputs">
+        <div class="email input">
+            <label>
+                <span>Email</span>
+                <input type="email" placeholder="Please enter your email">
+            </label>
+        </div>
+        <div class="message input">
+            <label>
+                <span>Message</span>
+                <input type="text" placeholder="Enter your message">
+            </label>
+        </div>
+        <button class="submit">Submit</button>
     </div>
 </div>
 <script src="{{asset('js/index.js')}}"></script>
