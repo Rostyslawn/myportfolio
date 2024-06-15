@@ -229,10 +229,7 @@ button {
                     color: $color-for-text;
                     width: 350px;
                     height: 40px;
-
-                    &::placeholder {
-                        text-indent: 5px;
-                    }
+                    text-indent: 10px;
                 }
             }
         }
