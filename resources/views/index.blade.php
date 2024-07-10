@@ -14,7 +14,6 @@
     <div class="nav">
         <div class="home"><a href="{{route("index")}}">Home</a></div>
         <div class="projects"><a href="#projects">Projects</a></div>
-        <div class="reviews"><a>Reviews</a></div>
         <div class="get-in-touch-link"><a href="#get-in-touch">Get In Touch</a></div>
     </div>
     <div class="main">
@@ -23,7 +22,7 @@
             <span class="about-me">
                 Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </span>
-            <button class="start">Let's get started</button>
+            <button class="start"><a href="#get-in-touch">Let's get started</a></button>
         </div>
         <div class="right-side">
             <div class="photo">
@@ -93,7 +92,8 @@
         <div class="message input">
             <label>
                 <span>Message</span>
-                <input type="text" placeholder="Enter your message">
+{{--                <input type="text" placeholder="Enter your message">--}}
+            <textarea placeholder="Enter your message"></textarea>
             </label>
         </div>
         <button class="submit">Submit</button>
